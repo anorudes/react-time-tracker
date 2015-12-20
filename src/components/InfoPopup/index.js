@@ -24,15 +24,15 @@ export class InfoPopup extends Component {
   componentDidUpdate() {
     const { id, addTime } = this.props;
     if (this.state.timerIdItem !== id) {
-      this.stopTimerAfterChangePopup(id);
+      this.stopTimerAfterChangeItem(id);
     } else if (this.state.timerStart) {
-        setTimeout(() => {
-          this.state.timerIdItem === id && addTime(id, 1);
-        }, 1000);
+      setTimeout(() => {
+        this.state.timerIdItem === id && addTime(id, 1);
+      }, 1000);
     }
   }
 
-  stopTimerAfterChangePopup(id) {
+  stopTimerAfterChangeItem(id) {
     this.setState({
       timerStart: false,
       timerIdItem: id,
