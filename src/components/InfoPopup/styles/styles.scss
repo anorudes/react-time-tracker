@@ -1,0 +1,52 @@
+@import '../../../styles/vars';
+
+:local(.styles) {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 300px;
+  height: 163px;
+  padding: 10px;
+  animation: .6s showPopup ease-in-out forwards;
+  border: 1px solid $popup-border-color;
+  > span b {
+    font-weight: 500;
+  }
+  .title {
+    font-size: 1.8rem;
+    display: block;
+    margin-bottom: -15px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+  }
+  .cost, .seconds, .itogo {
+    font-size: 1.4rem;
+    display: block;
+  }
+  .close {
+    font-size: 2rem;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    opacity: .6;
+    color: black;
+  }
+  .buttons {
+    display: block;
+    margin-top: 10px;
+  }
+  .button-stop {
+    color: white;
+    background: $popup-button-stop-timer-background;
+  }
+}
+
+@keyframes showPopup {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}

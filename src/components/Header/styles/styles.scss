@@ -1,0 +1,15 @@
+@import '../../../styles/vars';
+
+:local(.styles) {
+  position: relative;
+  background: $header-background;
+  padding: 0px 20px;
+  h1 {
+    position: relative;
+    display: block;
+    padding: 10px 0px;
+    margin: 0;
+    color: white;
+    border-bottom: 1px solid $header-border-color;
+  }
+}

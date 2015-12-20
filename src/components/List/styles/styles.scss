@@ -1,0 +1,65 @@
+@import '../../../styles/vars';
+
+:local(.styles) {
+  position: relative;
+  transition: all .3s ease;
+  min-height: 40px;
+  &.minHeight {
+    min-height: 165px;
+  }
+  &.slide {
+    margin-left: 315px;
+  }
+  h1 {
+    display: block;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $main-title-border-color;
+  }
+  .list-group {
+    margin-top: 15px;
+  }
+  .items-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .item {
+    font-size: 1.8rem;
+    display: block;
+    padding-bottom: 5px;
+    animation: .6s itemAnimate ease-in-out forwards;
+    span {
+      cursor: pointer;
+    }
+    &.active {
+      color: $item-title-color-hover;
+    }
+  }
+  .icon-list {
+    display: inline-block;
+    margin: 4px 5px;
+    vertical-align: top;
+  }
+  .icon {
+    font-size: 1.4rem;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: all .3s ease;
+    color: $item-icon-color;
+    &:hover {
+      color: $item-icon-color-hover;
+    }
+  }
+}
+
+@keyframes itemAnimate {
+  0% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}

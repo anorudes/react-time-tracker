@@ -1,0 +1,21 @@
+@import '../../../styles/vars';
+
+:local(.styles) {
+  position: relative;
+  margin-top: 15px;
+
+  h1 {
+    display: block;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+  }
+
+  .input-group {
+    width: 100%;
+  }
+  
+  .btn {
+    display: block;
+    margin-top: 20px;
+  }
+}
