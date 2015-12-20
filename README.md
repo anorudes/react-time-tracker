@@ -1,12 +1,12 @@
 React Time Tracker
 
+## Demo
+[http://anorudes.github.io/react-time-tracker](http://anorudes.github.io/react-time-tracker)
+
 ## Installation
 ```
 $ npm install
 ```
-
-## Demo
-[http://anorudes.github.io/react-time-tracker](http://anorudes.github.io/react-time-tracker)
 
 ## Run app
 ```
