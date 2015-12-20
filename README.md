@@ -5,6 +5,9 @@ React Time Tracker
 $ npm install
 ```
 
+## Demo
+[http://anorudes.github.io/react-time-tracker](http://anorudes.github.io/react-time-tracker)
+
 ## Run app
 ```
 $ npm start
